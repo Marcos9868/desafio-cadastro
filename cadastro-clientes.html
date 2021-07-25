@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cad-clientes.css">
+    <script src="./js/cad-clientes.js"></script>
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body onload="carregarTotalCliente('totalCliente')">
+    <div class="menu">
+
+    </div>
+    <div class="clientes">
+        <img src="./assets/user.png" alt="">
+        <p>Pessoas Cadastradas = <span id="totalCliente">0</span></p>
+    </div>
+    <!--Formulário: Nome, código e quantidade de produtos-->
+    <form>
+        <table>
+            <caption>Cadastro de Clientes</caption>
+            <tr>
+                <td class="alinharCampos">Nome:</td>
+                <td><input class="input" id="txtNomeCliente" type="text"></td>
+            </tr>
+            <tr>
+                <td class="alinharCampos">Email:</td>
+                <td><input class="input" id="txtEmailCliente" type="text"></td>
+            </tr>
+            <tr>
+                <td class="alinharCampos">Senha:</td>
+                <td><input class="input" id="txtSenhaCliente" type="password"></td>
+            </tr>
+            <tr>
+                <td class="alinharCampos">CPF:</td>
+                <td><input class="input" id="txtCpfCliente" type="text"></td>
+            </tr>
+            <tr>
+                <td class="alinharCampos">Endereço:</td>
+                <td><input class="input" id="txtEndCliente" type="text"></td>
+            </tr>
+            <tr>
+                <td class="alinharCampos">CEP:</td>
+                <td><input class="input" id="txtCepCliente" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarCliente('txtNomeCliente','txtEmailCliente','txtSenhaCliente','txtCpfCliente','txtEndCliente','txtCepCliente')">
+                    <input type="button" value="Ver Cadastro" class="alinhaBtns" onclick="window.open('./verCadastro.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <h1>Created by Marcos</h1>
+        <p>&copy;Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

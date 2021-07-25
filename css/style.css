@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(48, 45, 45);
+}
+
+.menu {
+    width: 100% auto;
+    height: 105px;
+    background: url(../assets/tech-code-final.png) no-repeat;
+    background-color: white;
+    margin-top: 0px;
+}
+
+.acesso{
+    width: 175px;
+    height: 105px;
+    background-color: rgb(105, 15, 15);
+    border-radius: 3px;
+    margin-top: -100px;
+    margin-left: 900px;
+    display: none;
+}
+
+.acesso > input{
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+    padding-top: 5px;
+}
+
+.acessar{
+    width: 170px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    color: white;
+}
+
+.menu > button{
+    background-image: linear-gradient(to right, rgb(105, 15, 15), rgb(202, 8, 8));
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-left: 1220px;
+    color: white;
+    border: 0px;
+    outline: 0;
+}
+
+.promocao-placas{
+    display: flex;
+    width: 100vw auto;
+    height: 650px;
+    margin-top: 50px;
+    background-image: linear-gradient(to right, black, rgb(163, 25, 25));
+    font-family: sans-serif;
+    color: white;
+}
+
+.promocao-placas--black-friday{
+    display: flex;
+    font-family: 'Anton';
+    font-size: 5em;
+    padding-top: 10px;
+    margin-left: 80px;
+}
+
+.desconto{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+.confira{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 150px;
+    background-color: rgb(194, 189, 189);
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: black;
+    border: 0px;
+    outline: 0;
+}
+
+
+.kit-gamer > img{
+    width: 450px;
+    height: 450px;
+    margin-top: 150px;
+    margin-left: 250px;
+}
+
+.central-produtos {
+    display: flex;
+    width: 100vw auto;
+    height: 100vh auto;
+    text-align: center;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+}
+
+.central-produtos::-webkit-scrollbar{
+    height: 7px;
+    border: 1px rgb(48, 45, 45);
+    border-radius: 2px;
+}
+
+.central-produtos::-webkit-scrollbar-thumb{
+    background-color: rgb(105, 15, 15);
+    border-radius: 10px;
+}
+
+.central-produtos > button{
+    border-radius: 5px;
+    background-color: brown;
+}
+
+.central-produto--scorpion > img{
+    width: 350px;
+}
+
+.central-produto--scorpion-info{
+    height: 75px;
+    align-items: center;
+    
+}
+
+.central-produto--scorpion-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+.central-produto--amd-radeon > img{
+    width: 350px;
+    margin-left: 100px;    
+}
+
+.central-produto--amd-radeon-info{
+    height: 75px;
+    align-items: center;
+    margin-left: 100px;    
+}
+
+.central-produto--amd-radeon-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+.central-produto--monitor-philips > img{
+    width: 350px;
+    margin-left: 100px;
+    align-items: center;  
+}
+
+.central-produto--monitor-philips-info{
+    height: 75px;
+    align-items: center;
+    margin-left: 100px;  
+}
+
+.central-produto--monitor-philips-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+.central-produto--vinik-dragon > img{
+    width: 350px;
+    margin-left: 100px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.central-produto--vinik-dragon-info{
+    height: 75px;
+    align-items: center;
+    margin-left: 100px;
+    border-radius: 5px;  
+}
+
+.central-produto--vinik-dragon-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+.central-produto--hayom > img{
+    width: 350px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.central-produto--gamer-hayom-info{
+    height: 75px;
+    align-items: center;
+    margin-left: 100px;   
+}
+
+.central-produto--gamer-hayom-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+.central-produto--geforce-rtx > img{
+    width: 350px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.central-produto--geforce-rtx-info{
+    height: 75px;
+    align-items: center;
+    margin-left: 100px;   
+} 
+
+.central-produto--geforce-rtx-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+.central-produto--amd-a4 > img{
+    width: 350px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.central-produto--amd-a4-info{
+    height: 75px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.central-produto--amd-a4-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+.central-produto--smart-intelI5 > img{
+    width: 350px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.central-produto--smart-intelI5-info{
+    height: 75px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.central-produto--smart-intelI5-info > button{
+    width: 140px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(105, 15, 15);
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+}
+
+footer > h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer > p {
+    text-align: center;
+}

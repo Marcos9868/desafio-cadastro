@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cad-produtos.css">
+    <script src="./js/cad-produtos.js"></script>
+    <title>Cadastro de novos produtos</title>
+</head>
+
+<body onload="carregarTotalEstoque('totalEstoque')">
+    <div class="menu">
+
+    </div>
+    <div class="carrinho">
+        <img src="./assets/sell-stock.png" alt="">
+        <p>Itens Inventário = <span id="totalEstoque">0</span></p>
+    </div>
+    <!--Formulário: Nome, código e quantidade de produtos-->
+    <form>
+        <table>
+            <caption>Cadastro de novos produtos</caption>
+            <tr>
+                <td class="alinharRotulos">Nome do produto:</td>
+                <td><input class="input" id="txtNomeProduto" type="text"></td>
+            </tr>
+            <tr>
+                <td class="alinharRotulos">Código do produto:</td>
+                <td><input class="input" id="txtCodProduto" type="text"></td>
+            </tr>
+            <tr>
+                <td class="alinharRotulos">Preço:</td>
+                <td><input class="input" id="txtPrecoProduto" type="text"></td>
+            </tr>
+            <tr>
+                <td class="alinharRotulos">Quantidade do produto:</td>
+                <td>
+                    <select id="qtidadeProduto">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('txtNomeProduto','txtCodProduto','txtPrecoProduto','qtidadeProduto')">
+                    <input type="button" value="Ver estoque" class="alinhaBtns" onclick="window.open('verEstoque.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <h1>Created by Marcos</h1>
+        <p>&copy;Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
